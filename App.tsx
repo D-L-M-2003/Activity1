@@ -1,20 +1,33 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TextInput, View, Button } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+    
+    <View style={styles.welcomeText}>
+      <Text>Activity 1, David Manley</Text>
       <StatusBar style="auto" />
+      <Text style = {styles.welcomeText}>Welcome to your Activity 1 app!</Text>
+    <Text>Enter Name: </Text>
+    <TextInput placeholder= "First Name"/>
+    <Text>Enter Surname: </Text>
+    <TextInput placeholder="Surname"/>
+    <Button title = "add user"/>
+
     </View>
+
   );
 }
-
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  welcomeText: {
+    paddingTop: 40,
+    color: 'purple',
+    fontWeight: 'bold',
+    fontSize: 28,
+    textAlign: 'center'
+  }
   },
-});
+);
+
+
+
