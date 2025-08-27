@@ -64,6 +64,7 @@ export function MainScreen({navigation}:any)
         <TextInput style={styles.InputBoxs} 
                     placeholder="Surname :"
                     onChangeText={newText => setSurname(newText)}/>
+                    
       </View>
         <Button title = "Add User" 
               onPress={()=>{
